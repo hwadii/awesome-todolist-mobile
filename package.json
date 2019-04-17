@@ -6,7 +6,7 @@
     "ionic": "ionic"
   },
   "devDependencies": {
-    "@ionic/v1-toolkit": "1.0.22",
+    "@ionic/v1-toolkit": "^1.0.22",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^3.7.0",
     "gulp-rename": "^1.2.0",
