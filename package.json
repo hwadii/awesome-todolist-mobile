@@ -13,7 +13,7 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "cordova": "^9.0.0",
-    "ionic": "^4.12.0"
+    "ionic": "^4.12.0",
+    "@ionic/v1-toolkit": "^1.0.22"
   }
 }
