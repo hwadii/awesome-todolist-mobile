@@ -7,19 +7,19 @@
   "proxies": [
     {
       "path": "/api/list",
-      "proxyUrl": "http://localhost:3000/api/list"
+      "proxyUrl": "https://awesome-todolist.herokuapp.com/api/list"
     },
     {
       "path": "/api/lists",
-      "proxyUrl": "http://localhost:3000/api/lists"
+      "proxyUrl": "https://awesome-todolist.herokuapp.com/api/lists"
     },
     {
       "path": "/login",
-      "proxyUrl": "http://localhost:3000/login"
+      "proxyUrl": "https://awesome-todolist.herokuapp.com/login"
     },
     {
       "path": "/logout",
-      "proxyUrl": "http://localhost:3000/logout"
+      "proxyUrl": "https://awesome-todolist.herokuapp.com/logout"
     }
   ]
 }
