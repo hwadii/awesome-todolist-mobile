@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "An Ionic project",
   "scripts": {
-    "ionic": "ionic",
-    "start": "ionic serve"
+    "ionic": "ionic"
   },
   "devDependencies": {
     "@ionic/v1-toolkit": "1.0.22",
