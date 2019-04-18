@@ -156,13 +156,34 @@ const LoginCtrl = function($scope, $state, $http, $ionicPopup) {
   };
 
   $scope.signup = () => {
-    console.log('hi');
     $state.go('signup');
   };
 };
 
 const SignupCtrl = function($scope, $state, $http, $ionicPopup) {
   $scope.credentials = {};
+  $scope.signup = conf => {
+    if ($scope.credentials.password === conf) {
+      $http
+        .post('/signup', $scope.credentials)
+        .then(data => {
+          console.log(data);
+          if (data.status === 200) $state.go('login');
+          $ionicPopup.alert({
+            title: 'Vous êtes inscrit',
+            template: 'Veuillez vous connecter !'
+          });
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    } else {
+      $ionicPopup.alert({
+        title: 'Les mots de passes sont différents',
+        template: 'Veuillez verifier vos informations !'
+      });
+    }
+  };
 
   $scope.back = () => {
     $state.go('login');

@@ -20,6 +20,10 @@
     {
       "path": "/logout",
       "proxyUrl": "https://awesome-todolist.herokuapp.com/logout"
+    },
+    {
+      "path": "/signup",
+      "proxyUrl": "https://awesome-todolist.herokuapp.com/signup"
     }
   ]
 }
