@@ -202,6 +202,7 @@ angular
       .state('login', {
         url: '/login',
         templateUrl: 'templates/login.html',
+        cache: false,
         controller: 'LoginCtrl'
       })
       .state('todo', {
